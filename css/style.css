@@ -27,3 +27,43 @@ body
     padding: 2em;
     border-radius: 10px;
 }
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #ffffff71 ;
+  }
+  .select-selected.select-arrow-active:after {
+    border-color:  #fff ;
+    top: 8px;
+  }
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px ;
+    border: 1px solid transparent;
+    border-color: transparent rgba(0, 0, 0, 0.1) ;
+    cursor: pointer;
+  }
+  .select-items {
+    position: absolute;
+    background-color: rgb(22, 225, 46);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
