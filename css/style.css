@@ -1,16 +1,22 @@
 header {
     background-image: url("b1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
     color:black;
-    text-decoration: double;
+    text-decoration: underline;
     text-align: center;
+    text-shadow: 3px 3px 2px rgb(211, 16, 16);
     padding: 1em 0;
 }
 header h1 {
-    font-size: larger;
+   font-style: italic;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: xx-large;
 }
 body
 {
-    background-image: url("bpp.jpg");
+    background-image: url("bg\ 2.jpg");
     background-attachment: scroll;
     background-size: cover;
 }
@@ -20,7 +26,6 @@ body
     padding: 2em;
     border-radius: 10px;
 }
-
 .about-content {
     background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 35px;
@@ -31,6 +36,7 @@ body
     position: relative;
     font-family: Arial;
   }
+  
   .select-selected {
     background-color: DodgerBlue;
   }
@@ -63,7 +69,6 @@ body
     right: 0;
     z-index: 99;
   }
-
   .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
   }
